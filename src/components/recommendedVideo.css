@@ -1,0 +1,25 @@
+.recommendedVideo{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 30%;
+    gap: 10px;
+}
+.videoCard{
+    display: flex;
+    text-decoration: none;
+    gap: 10px;
+}
+.videoCard img{
+    height: 100px;
+    border-radius: 10px;
+}
+.text p{
+    font-size: small;
+}
+@media screen and (max-width: 800px){
+    .recommendedVideo{
+        width: 100%;
+    }
+    
+}

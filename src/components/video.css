@@ -1,0 +1,9 @@
+.video{
+    display: flex;
+}
+@media screen and (max-width: 800px){
+    .video{
+        flex-direction: column;
+    }
+    
+}

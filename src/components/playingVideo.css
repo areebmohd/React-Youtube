@@ -1,0 +1,167 @@
+.playingVideo{
+    width: 70%;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.playingVideo video{
+    height: 500px;
+    border-radius: 10px;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.leftDetails{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.leftDetails img{
+    height: 40px;
+    border-radius: 50%;
+}
+.leftDetails button{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.rightDetails{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.like-dislike{
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.150);
+    border-radius: 20px;
+}
+.like{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 15px;
+}
+.dislike{
+    padding: 7px;
+    padding-right: 20px;
+    padding-left: 15px;
+    position: relative;
+}
+.dislike::after{
+    content: "";
+    width: 2px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    left: 0;
+}
+.share{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 9px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(255, 255, 255, 0.150);
+    border-radius: 20px;
+}
+.more{
+    background-color: rgba(255, 255, 255, 0.150);
+    border-radius: 50%;
+    padding: 8px;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+.description{
+    background-color: rgba(255, 255, 255, 0.150);
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.comments{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.reply{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.reply img{
+    height: 40px;
+    border-radius: 50%;
+}
+.reply input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.150);
+    outline: none;
+    color: white;
+    width: 50%;
+    padding-bottom: 5px;
+}
+.reply button{
+    background-color: rgb(0, 150, 255);
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.comment{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.comment img{
+    height: 40px;
+    border-radius: 50%;
+}
+.commentText{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.commentText div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: small;
+}
+.commentText .username{
+    font-weight: bold;
+}
+.commentText .time{
+    color: rgba(255, 255, 255, 0.453);
+}
+@media screen and (max-width: 1000px){
+    .playingVideo{
+        width: 100%;
+    }
+    .details{
+        flex-direction: column;
+        gap: 10px;
+        align-items: start;
+    }
+    iFrame{
+        width: 100%;
+        height: 300px;
+    }
+}

@@ -1,0 +1,55 @@
+.link{
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+.link:hover{
+    background-color: rgba(255, 255, 255, 0.150);
+    border-radius: 10px;
+}
+.link svg{
+    height: 20px;
+    width: 20px;
+}
+.sidebar h3{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sidebar img{
+    height: 20px;
+}
+.mainLinks, .exploreLinks, .subscriptionsLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.sidebar{
+    background-color: black;
+    width: 250px;
+    height: 100vh;
+    padding: 20px;
+}
+.smallSidebar{
+    width: 4%;
+}
+.smallSidebar p{
+    display: none;
+}
+.smallSidebar h3{
+    display: none;
+}
+.smallSidebar hr{
+    margin-bottom: 20px;
+}
+@media (max-width: 800px){
+    .sidebar{
+        display: none;
+    }
+    .smallSidebar{
+        display: none;
+    }
+}
